@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        int szer = 7;
+        int szer = 5;
         int wys = 5;
         for (int i = 0; i < wys; i++) {
             for (int j = 0; j < szer; j++) {
