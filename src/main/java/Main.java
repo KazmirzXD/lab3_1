@@ -1,11 +1,16 @@
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int szer = 5;
-        int wys = 5;
-        for (int i = 0; i < wys; i++) {
-            for (int j = 0; j < szer; j++) {
-                if (i == 0 || i == wys - 1 || j == 0 || j == szer - 1) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the size of the square: ");
+        int size = scanner.nextInt();
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (i == 0 || i == size - 1 || j == 0 || j == size - 1) {
                     System.out.print('*');
                 } else {
                     System.out.print(' ');
@@ -13,5 +18,7 @@ public class Main {
             }
             System.out.println();
         }
+
+        scanner.close();
     }
 }
